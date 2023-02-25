@@ -50,7 +50,7 @@ const Notes = ({ notes }) => {
       </header>
       <div className="notes__container">
         {filterd.length === 0 && (
-          <p className="empty__notes">Notes Not Found.</p>
+          <p className="empty__notes">Not Found Any Notes.</p>
         )}
         {filterd.map((note) => (
           <NoteItem key={note.id} note={note} />
